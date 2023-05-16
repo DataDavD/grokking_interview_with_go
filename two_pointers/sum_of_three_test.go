@@ -17,7 +17,7 @@ func Test_threeSum(t *testing.T) {
 			name: "true: only positive numbers",
 			args: args{
 				nums:   []int{3, 7, 1, 2, 8, 4, 6},
-				target: 25,
+				target: 21,
 			},
 			want: true,
 		},
