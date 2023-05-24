@@ -1,4 +1,4 @@
-package palindrome
+package two_pointers
 
 import (
 	"errors"
@@ -39,7 +39,7 @@ func Test_validPalindrome(t *testing.T) {
 	}
 	for _, tt := range testCases {
 		t.Run(tt.name, func(t *testing.T) {
-			got, err := ValidPalindrome(tt.testStr)
+			got, err := validPalinedrome(tt.testStr)
 			if !errors.Is(err, tt.wantErr) {
 				t.Errorf("validPalindrome() error = %v, wantErr %v", err, tt.wantErr)
 				return

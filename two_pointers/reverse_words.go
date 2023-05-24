@@ -1,4 +1,4 @@
-package palindrome
+package two_pointers
 
 import (
 	"regexp"
